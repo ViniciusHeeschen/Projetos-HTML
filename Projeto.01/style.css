@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Satisfy&display=swap');
+
+body {
+    background-color: bisque;
+}
+
+header {
+    background-color: brown;
+    color: orange;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    text-align: center;
+    padding: 25px ;
+    margin: -28px;
+}
+
+header p {
+    padding-bottom: 20px;
+    font-family: "Satisfy", Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+nav a{
+    text-decoration: none;
+    transition-delay: 0.1s;
+    color: white;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: black;
+    border-radius: 5px;
+}
+
+main {
+    background-color: orange;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 40px;
+    text-align: center;
+    width: 80%;
+    height: 100%;
+    margin: 20px 110px;
+}
