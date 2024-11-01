@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DynaPuff:wght@400..700&display=swap');
+/*"DynaPuff"*/
+
+
+body {
+    background-image: url(img/img-fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+article {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+}
+
+article a {
+    color: white;
+    padding: 19px;
+    border: 1px solid white;
+    border-radius: 8px;
+    margin: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a:hover {
+    background-color: white;
+    color: black;
+}
+
+main {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 1000px;
+    height: auto;
+    width: 90%;
+    margin: auto;
+    padding: 15px;
+    box-sizing: border-box;
+    position: relative; 
+}
+
+.jogo {
+    width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Para ter bordas arredondadas, igual ao main */
+    margin-bottom: 15px; /* Espaçamento entre a imagem e o conteúdo abaixo */
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    border-radius: 3px;
+    padding: 2px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+a.jogo:hover {
+    background-color: white;
+    color: black;
+}
+
+main h1 {
+    font-family: "DynaPuff", Arial, Helvetica, sans-serif;
+}
+
+
+table {
+    margin: auto;
+    
+}
+
+footer {
+    background-color: black;
+    padding: 1px;
+    text-align: center;
+    color: white;
+    margin: 20px -8px -14px;
+}
+
+
+
+
+/* Media Queries */
+@media (max-width: 768px) { /* Para telas menores, como celulares */
+    main {
+        width: 95%; /* Ajusta a largura do main */
+        padding: 10px; /* Reduz o padding */
+    }
+
+    article a {
+        padding: 10px; /* Ajusta o padding dos links */
+        margin: 5px; /* Ajusta a margem dos links */
+    }
+
+    main h1 {
+        font-size: 1.5em; /* Ajusta o tamanho da fonte */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1280px) { /* Para telas de TVs e tablets */
+    main {
+        width: 80%; /* Ajusta a largura do main para telas médias */
+    }
+
+    main h1 {
+        font-size: 2em; /* Ajusta o tamanho da fonte */
+    }
+}
